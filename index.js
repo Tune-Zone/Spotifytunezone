@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const Tune = require('./Model/Tunepost')
 
 const app = express()
-const port = 5000
+const port = process.env.PORT || 5000
 
 app.use(cors()) // To handle cross-origin requests
 app.use(express.json()); // To parse JSON bodies
